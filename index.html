@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+          @font-face {
+            font-family: 'Red Hat Display',san-serif;
+            
+          }
+
+      .background-pattern {
+        width: 1440px;
+      padding: 100px 0 100px 0;
+        background: no-repeat #e0e8ff
+          url(/order-summary-component-main/images/pattern-background-desktop.svg);
+      }
+      
+      .card__container {
+        background-color: white;
+        width: 450px;
+        margin:auto;
+        border-radius: 20px;
+      }
+
+      .card__hero {
+        border-radius: 20px 20px 0 0;
+      }
+
+      .card__os-header {
+        font-family: 'red hat display';
+        font-weight: 900;
+        color: #212b4d;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 28px;
+      }
+
+      .card__os-paragraph {
+        font-family: 'red hat display';
+        font-weight: 600;
+        color: hsl(224, 23%, 55%);
+        text-align: center;
+        padding: 0 50px 0 50px;
+        line-height: 24px;
+        margin: -5px auto 20px auto;
+      }
+
+      .card__ap-container {
+        background-color: #f8f9fe;
+        margin: 0 50px 0 50px;
+        display: flex;
+        align-items: center;
+       justify-content:space-evenly;
+        border-radius: 10px;
+      }
+      
+      .card__ap-annual-plan {
+        font-family: 'red hat display';
+        color: #212b4d;
+        font-size: 16px;
+        font-weight:900;
+        margin: 20px 0 5px 0;
+      }
+      
+      .card__ap-price {
+        font-family: 'red hat display';
+        color: hsl(224, 23%, 55%);
+        font-size: 17px;
+        font-weight:600;
+        margin-top: 0px;
+        
+
+        
+      }
+      .card__ap-hypertext-container {
+        font-family: 'red hat display';
+        color: hsl(223, 47%, 23%);
+        font-size: 14px;
+        font-weight:600;
+        text-align: right;
+        padding-left: 50px;
+      }
+
+      .card__button {
+        font-family: 'red hat display';
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        border: none;
+        text-decoration: none;
+        background-color: #1e20cd;
+        color: white;
+        padding: 15px 100px 15px 100px;
+        margin: 30px auto 30px auto;
+        border-radius: 10px;
+        box-shadow: 0px 12px 24px  #1e20cd50;
+      }
+      
+      .card__button:hover {
+        background-color: #1e20cd90;
+      }
+      .card__button:active {
+        background-color: #1e20cde0 ;
+      }
+      .card__cancel-order-container {
+        text-align: center;     
+        padding-bottom: 50px;   
+        color: #1e20cd;
+      }
+
+      .cancel-order-hypertext {
+        font-family: 'red hat display';
+        font-size: 16px;
+        text-decoration: none;
+      }
+
+      .card__ap
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background pattern -->
+    <div class="background-pattern">
+    <!-- Container for Card -->
+    <div class="card__container">
+      
+        <!-- Hero image -->
+        <article>
+        <div>
+          <img
+            src="/order-summary-component-main/images/illustration-hero.svg"
+            alt="illustration of a person enjoying music"
+            class="card__hero"
+          />
+        </div>
+        <!-- header of order summary (os) -->
+
+        <h1 class="card__os-header">Order Summary</h1>
+        <!-- paragraph of order summary (os) -->
+        <p class="card__os-paragraph">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <!-- Container for Annual Plan (ap) -->
+        <article class="card__ap-container">
+          <!-- Icon Music Note -->
+          <img
+            src="/order-summary-component-main/images/icon-music.svg"
+            alt="musical note"
+            class="card__ap-music-note"
+          />
+          <article class="card__ap-text-container">
+          <!-- Annual Plan (ap) -->
+          <h6 class="card__ap-annual-plan">Annual Plan</h6>
+          <!-- price -->
+          <p class="card__ap-price">$59.99/year</p>
+          </article>
+          <!-- hypertext -->
+          <p class="card__ap-hypertext-container">
+            <a href="#" class="card__ap-hypertext">Change</a>
+          </p>
+        </article>
+        <!-- Button -->
+        <button class="card__button">Proceed to Payment</button>
+        <!-- Cancel Order -->
+        <p class="card__cancel-order-container">
+          <a href="#" class="cancel-order-hypertext">Cancel Order</a>
+        </p>
+      </div>
+    </article>
+    </div>
+  </body>
+</html>
+
+Order Summary You can now listen to millions of songs, audiobooks, and podcasts
+on any device anywhere you like! Annual Plan $59.99/year Change Proceed to
+Payment Cancel Order
